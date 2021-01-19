@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/d55d595f30.js" crossorigin="anonymous"></script>
+	<title>Registro</title>
+	<link rel="stylesheet" type ="text/css" href="css/estilos1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo-1.png">
+</head>
+<body>
+<section class="container-fluid py-3">
+	<div class="backgroup-overlay text-white py-5">
+		<div class="container-fluid text-center py-5">
+			<h1>REGISTRO DE NOTAS</h1>
+		</div>
+	</div>
+	<div class="container py-3">
+            <div class="row mb-3">
+                <label  for="inputEmail3" class="col-sm-1 col-form-label">Nombre</label>
+                <div class="col-sm-5">
+                  <input  id='entrada'  type="email" class="form-control">
+                </div>
+           		<label  for="inputEmail3" class="col-sm-1 col-form-label">Apellidos</label>
+                <div class="col-sm-5">
+                  <input  id='entrada'  type="email" class="form-control">
+                </div>
+  
+        	</div>
+        	<div class="row">
+        		<div class="col-md-4">
+				    <label for="inputState" class="form-label">Nivel</label>
+				    <select class="form-select" id="inlineFormSelectPref">
+				      <option selected>Seleccionar</option>
+				      <option value="1">Inicial</option>
+				      <option value="2">Primaria</option>
+				      <option value="3">Secundaria</option>
+				      
+				    </select>
+				</div>
+				  <div class="col-md-4">
+				    <label for="inputState" class="form-label">Grado</label>
+				    <select class="form-select" id="inlineFormSelectPref">
+				      <option selected>Seleccionar</option>
+				      <option value="1">One</option>
+				      <option value="2">Two</option>
+				      <option value="3">Three</option>
+				      <option value="3">Four</option>
+				      <option value="3">Five</option>
+				      <option value="3">Six</option>
+				    </select>
+				</div>
+				<div class="col-md-4">
+				    <label for="inputState" class="form-label">Periodo</label>
+				    <select class="form-select" id="inlineFormSelectPref">
+				      <option selected>Seleccionar</option>
+				      <option value="1">2020-I</option>
+				      <option value="2">2020-II</option>
+				      <option value="3">2021-I</option>
+				  
+				    </select>
+				</div>
+				<h5 class="py-3" style="color: red">Registre notas</h5>	
+        	</div>
+        	<div class="row py-3">
+        		<div class="col-md-4">
+				    <label for="inputState" class="form-label">Matemática</label>
+				    <div class="col-sm-5">
+                  	<input  id='valor1'  type="email" class="form-control">
+                	</div>
+				</div>
+				<div class="col-md-4">
+				    <label for="inputState" class="form-label">Comunicación</label>
+				    <div class="col-sm-5">
+                  	<input  id='valor2'  type="email" class="form-control">
+                	</div>
+				</div>
+				<div class="col-md-4">
+				    <label for="inputState" class="form-label">Ciencia y Ambiente</label>
+				    <div class="col-sm-5">
+                  	<input  id='valor3'  type="email" class="form-control">
+                	</div>
+				</div>
+        		
+        	</div>
+        	<div class="row">
+        		<div class="col-md-4">
+				    <label for="inputState" class="form-label">Historia</label>
+				    <div class="col-sm-5">
+                  	<input  id='valor4'  type="email" class="form-control">
+                	</div>
+				</div>
+				<div class="col-md-4">
+				    <label for="inputState" class="form-label">Programación</label>
+				    <div class="col-sm-5">
+                  	<input  id='valor5'  type="email" class="form-control">
+                	</div>
+				</div>
+				<div class="col-md-4">
+				    <label for="inputState" class="form-label">Derivadas e Integrales</label>
+				    <div class="col-sm-5">
+                  	<input  id='valor6'  type="email" class="form-control">
+                	</div>
+				    <div class="py-5">
+				    		<button class="btn btn-primary" id="bott">Promedio</button>	
+				    </div>
+				   	
+				</div>
+				
+        		
+        	</div>							  
+    </div>
+		
+</section>
+<script type="text/javascript">
+	function calculo(){
+		var numero1 = $("#valor1").val();
+		var numero2 = $("#valor2").val();
+		var numero3 = $("#valor3").val();
+		var numero4 = $("#valor4").val();
+		var numero5 = $("#valor5").val();
+		var numero6 = $("#valor6").val();
+		var suma = parseInt(numero1) + parseInt(numero2) + parseInt(numero3) + parseInt(numero4) + parseInt(numero5) + parseInt(numero6)
+		var promedio = parseInt(suma/6) 
+		if (suma <121){
+			alert('El promedio del alumno:  ' + promedio)
+			if(promedio<13){
+				alert('Condición: Reprobado')
+			}else{
+				alert('Condición: Aprobado')
+			};
+		}else{
+			alert('Algunas de las notas ingresadas no son válidas')
+		}
+
+	};
+
+	$("#bott").click(function(){
+		calculo()
+	});
+	
+</script>
+
+</body>
+</html>

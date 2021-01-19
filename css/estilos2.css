@@ -1,0 +1,31 @@
+#logo{
+    position: relative;
+    left: 2em;
+}
+#navbarNav{
+    position: relative;
+    left: 100px;
+} 
+
+#button1{
+    position: absolute;
+    top: 350px;
+    left: 210px;
+    
+}
+
+#p1{
+    color: #f79a1f;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+#p2{
+    color: #1289A7;
+    text-align: center;
+    font-weight: 500;
+}
+
+#d1{
+    
+}

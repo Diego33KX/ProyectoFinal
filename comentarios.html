@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+	<link href = "https://fonts.googleapis.com/css2? family = Bodoni + Moda & display = swap" rel = "hoja de estilo">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Icono de la página -->
+	<!-- <link rel="shortcut icon" type="image/x-icon" href="Ti.ico"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo.ico">
+
+	<title>Comentarios</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/logo-1.png">
+</head>
+<body>
+	<div class="container">
+		<!-- justify-content -- sirve para centrar  -->
+		<div class="row comentarios justify-content-center">
+			<div class="col-6">
+				<form action="" class="form_comentarios d-flex justify-content-end flex-wrap" >
+					<textarea name="" id="inputText2" placeholder="Comentario"></textarea>
+					<button class="btn" type="button" onclick="enviarTexto()">Comentar</button>					
+				</form>
+
+				<!-- <input type="text" id="inputText2"> -->
+				<!-- <input type="button" id="botonText" onclick="enviarTexto()" value="Responder"> -->
+
+                <script>
+				    function enviarTexto()
+				    {
+				      var texto=document.getElementById("inputText2").value;
+				      document.getElementById("inputText").value=texto;
+
+				    }
+				</script>
+
+
+				<div class="media">
+					<!-- <img src="img/perfil.jpg" width="84" height="84" alt=""> -->
+					<div class="media-body">
+						<img src="img/perfil.jpg" width="84" height="84" alt="">
+						<p class="nombre"> Saco Oliveros <span> 8:00 am, Hoy</span></p>
+
+						<input type="text" id="inputText" readlonly="readlonly">
+							<p class="comentario"> 
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+								consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+								cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+								proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+							</p>
+						<div class="botones text-right">
+							<a href="#">Responder</a>
+						</div>
+
+					</div>
+			</div>
+
+					<div class="media">
+							<img src="img/dibujo1.jpg" width="84" height="64" alt="">
+							<div class="media-body">
+								
+								<p class="nombre"> Persona 1  <span> 8:00 am, Hoy</span></p>
+									<p class="comentario"> 
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+								<div class="botones text-right">
+									<a href="#">Responder</a>
+								</div>
+
+							</div>
+					</div>
+
+					<div class="media">
+							<img src="img/dibujo2.jpg" width="84" height="64" alt="">
+							<div class="media-body">
+								
+								<p class="nombre"> Persona 2  <span> 8:00 am, Hoy</span></p>
+									<p class="comentario"> 
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+								<div class="botones text-right">
+									<a href="#">Responder</a>
+								</div>
+
+							</div>
+					</div>
+
+					<div class="media">
+							<img src="img/dibujo3.jpg" width="84" height="64" alt="">
+							<div class="media-body">
+								
+								<p class="nombre"> Persona 3  <span> 8:00 am, Hoy</span></p>
+									<p class="comentario"> 
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+										tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+										quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+										cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+										proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+									</p>
+								<div class="botones text-right">
+									<a href="#">Responder</a>
+								</div>
+
+							</div>
+					</div>
+        </div>
+	
+	</div>
+
+</body>
+</html>
